@@ -10,7 +10,6 @@
 .card : hover{
     box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.2);
 }
-
 container{
 padding: 2px 16px;
 }
@@ -39,10 +38,6 @@ padding: 2px 16px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-form{
-/*    padding: 10px;*/
-}
 input {
     width: 200px;
     padding: 12px 40px;
@@ -51,7 +46,6 @@ input {
     font-size: 15px;
     border-radius: 7px;
 }
-
 #res{
     font-family: cursive;
 }
@@ -59,9 +53,3 @@ input {
     width: 200px;
     color:red;
 }
-
-
-/*
-Fix empty inputs 
-or display the result of last check city
-Add some css to the project and upload it to github*/

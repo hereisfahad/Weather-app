@@ -25,12 +25,11 @@ class App extends Component {
                 error: ''   
             })
         }catch(error){
-            console.log("errored")
+//            console.log("errored")
             this.setState({error: 'Please enter the correct city and country names'})
     }
 //        console.log(data);
 //        console.log(data.weather[0].icon);
-   
 //        console.log(this.state.image);
       }
   render() {
