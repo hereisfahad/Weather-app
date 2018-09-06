@@ -1,4 +1,67 @@
 #card1{
-    margin-top: 30px;
-    padding: 30px;
+    margin-top: 10px;
+    padding: 10px;
 }
+.card{
+    /*add shadows to create the card effect*/
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.card : hover{
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.2);
+}
+
+container{
+padding: 2px 16px;
+}
+.btn{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: cursive;
+    border: 2px solid blue;
+    border-radius: 7px;
+    transition-duration: 1s;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.2),0 6px 20px 0 rgb(0, 0, 0, 0.19);
+}
+.btn:hover{
+    background-color: blue;
+}
+
+#title{
+    font-size: 4em;
+    background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+form{
+/*    padding: 10px;*/
+}
+input {
+    width: 200px;
+    padding: 12px 40px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 15px;
+    border-radius: 7px;
+}
+
+#res{
+    font-family: cursive;
+}
+#span{
+    width: 200px;
+    color:red;
+}
+
+
+/*
+Fix empty inputs 
+or display the result of last check city
+Add some css to the project and upload it to github*/
