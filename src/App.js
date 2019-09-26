@@ -51,6 +51,7 @@ class App extends Component {
                     <input type="text" placeholder="country"  name ="country" className = "form-control"/> <br></br><br></br>
                     <button className = "btn" > Get Weather </button>
                 </form>
+                <span id= "error">{error!==''?<h1>Error:{error}</h1>:''}</span>
             </div>
             {
               image!==''
@@ -60,7 +61,6 @@ class App extends Component {
                     {loc!==''?<h1>City: {loc}</h1>:''}
                     {temp!==''?<h1>Temp: {temp}</h1>:''}
                     {humd!==''?<h1>Humidity: {humd}</h1>:''}
-                    <span id= "span">{error!==''?<h1>Error:{error}</h1>:''}</span>
               </div>
               : ''
             }
