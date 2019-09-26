@@ -25,7 +25,6 @@ class App extends Component {
                 error: ''   
             })
         }catch(error){
-//            console.log("errored")
             this.setState({
                 temp: '',
                 humd: '',
@@ -39,24 +38,33 @@ class App extends Component {
 //        console.log(this.state.image);
       }
   render() {
+    const { image, loc, temp, humd, error } = this.state;
     return (
       <div className="container">
         <center>
             <div className ="card" id="card1">
+
                 <span id = "title">Weather</span>
+
                 <form onSubmit = {this.handleClick} >
                     <input type="text" placeholder="city"  name ="city" className = "form-control"/> <br></br><br></br>
                     <input type="text" placeholder="country"  name ="country" className = "form-control"/> <br></br><br></br>
                     <button className = "btn" > Get Weather </button>
                 </form>
-                <div id ="res">
-                {this.state.image!==''?<img src ={this.state.image} width = "100px" height = "100px" alt = "weather icon"></img>:''}
-                {this.state.loc!==''?<h1>City: {this.state.loc}</h1>:''}
-                {this.state.temp!==''?<h1>Temp:{this.state.temp}</h1>:''}
-                {this.state.humd!==''?<h1>Humidity:{this.state.humd}</h1>:''}
-                <span id= "span">{this.state.error!==''?<h1>Error:{this.state.error}</h1>:''}</span>
-                </div>
             </div>
+            {
+              image!==''
+              ?
+              <div className="card" id ="res">
+                    {image!==''?<img src ={image} width = "100px" height = "100px" alt = "weather icon"></img>:''}
+                    {loc!==''?<h1>City: {loc}</h1>:''}
+                    {temp!==''?<h1>Temp: {temp}</h1>:''}
+                    {humd!==''?<h1>Humidity: {humd}</h1>:''}
+                    <span id= "span">{error!==''?<h1>Error:{error}</h1>:''}</span>
+              </div>
+              : ''
+            }
+
         </center>
       </div>
     );
